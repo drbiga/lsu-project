@@ -1,0 +1,6 @@
+[submodule "lsu-project-backend"]
+	path = lsu-project-backend
+	url = https://github.com/drbiga/lsu-project-backend
+[submodule "lsu-project-frontend"]
+	path = lsu-project-frontend
+	url = https://github.com/drbiga/lsu-project-frontend

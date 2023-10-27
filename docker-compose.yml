@@ -1,0 +1,26 @@
+version: '3'
+services:
+  backend:
+    build: ./lsu-project-backend
+    container_name: backend
+    volumes:
+      - backend-session-service:/app/data
+    ports:
+      - 8000:8000
+
+  backend_test_environment_initializer:
+    build: ./lsu-project-backend/environment
+    container_name: backend_initializer
+    depends_on:
+      - backend
+    environment:
+      - HOSTNAME=backend
+
+  frontend:
+    build: ./lsu-project-frontend
+    container_name: frontend
+    ports:
+      - 5173:5173
+
+volumes:
+  backend-session-service:
