@@ -1,0 +1,19 @@
+{
+  "name": "lsu-project-attention-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "user-input-tracker": "file:PA.UserInputTracker/typescript"
+  }
+}
